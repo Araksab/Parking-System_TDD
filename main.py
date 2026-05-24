@@ -8,11 +8,11 @@ def calculate_parking_fee(vehicle_type, parking_duration, day_type, is_public_ho
     if is_public_holiday:
         return 15
 
-    if vehicle_type == "motorcycle":
+    if vehicle_type == "motorcycles":
         fee = 2
-    elif vehicle_type == "car":
+    elif vehicle_type == "cars":
         fee = 5
-    elif vehicle_type == "truck":
+    elif vehicle_type == "trucks":
         fee = 10
     else:
         return -1
