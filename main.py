@@ -27,3 +27,5 @@ def calculate_parking_fee(vehicle_type: str, parking_duration: float, day_type: 
     else:
         return -1
     
+    return fee
+    
