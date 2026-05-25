@@ -1,4 +1,7 @@
-def calculate_parking_fee(vehicle_type, parking_duration, day_type, is_public_holiday):
+def calculate_parking_fee(vehicle_type: str, parking_duration: float, day_type: str, is_public_holiday: bool) -> float:
+    vehicle = vehicle_type.strip().lower()
+    day = day_type.strip().lower()
+
     if parking_duration > 24:
         return -1
 
